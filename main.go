@@ -6,9 +6,6 @@ import (
 	"net/http"
 )
 
-func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "route: %q", r.URL.Path)
-}
 
 func main() {
 	http.HandleFunc("/", IndexHandler)    
